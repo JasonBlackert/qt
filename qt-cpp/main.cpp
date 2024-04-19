@@ -4,12 +4,6 @@
 //#include <QCoreApplication>
 //#include <QDebug>
 
-//using namespace std;
-
-void test() {
-    std::cout << " VARIABLE: " << VARIABLE << std::endl;
-}
-
 double addition(const std::pair<double, double>& numbers) {
     return numbers.first + numbers.second;
 }
@@ -47,8 +41,6 @@ int main(int argc, char *argv[])
 {
     double result;
     std::string choice;
-
-    test();
 
     std::cout << "Enter operation (+, -, *, +)" << std::endl;
     std::cin >> choice;
