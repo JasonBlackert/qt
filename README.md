@@ -12,5 +12,5 @@ CONFIG += c++11
 SOURCES += main.cpp
 ```
 
-Then run the following line.
+Then run the following line to setup the Makefile
 `qmake -o Makefile calculator.pro`
