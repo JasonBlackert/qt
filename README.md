@@ -14,3 +14,6 @@ SOURCES += main.cpp
 
 Then run the following line to setup the Makefile
 `qmake -o Makefile calculator.pro`
+
+Then `make` the application and execute it via the following line:
+`./SimpleCalculator`
