@@ -39,7 +39,16 @@ Calculator::Calculator(QWidget *parent) : QMainWindow(parent) {
 
     centralWidget->setLayout(gridLayout);
 
-    connect(pushButtons[20], &QPushButton::clicked, this, &Calculator::calculate);
+    connect(pushButtons[18], &QPushButton::clicked, this, &Calculator::calculate);
+    connect(pushButtons[20], &QPushButton::clicked, this, &Calculator::clearPrompt);
+
+    // Set operation: static string via button press, calculate will inact operation
+}
+
+void Calculator::clearPrompt() {
+    QString result = displayLabel->text();
+    double res = evalExpression(result);
+    displayLabel->setText(QString::number(res));
 }
 
 void Calculator::calculate() {

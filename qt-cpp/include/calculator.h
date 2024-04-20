@@ -21,6 +21,7 @@ public:
     explicit Calculator(QWidget *parent = nullptr);
 
 private slots:
+    void clearPrompt();
     void calculate();
     double evalExpression(const QString &expr);
     void onButtonClicked();
